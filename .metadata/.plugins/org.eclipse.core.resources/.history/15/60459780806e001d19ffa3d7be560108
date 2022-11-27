@@ -1,0 +1,5 @@
+package com.ufcg.hrpayroll.services;
+
+public class PaymentService {
+
+}

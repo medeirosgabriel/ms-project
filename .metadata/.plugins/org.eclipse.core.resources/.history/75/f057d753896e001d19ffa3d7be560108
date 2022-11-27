@@ -1,0 +1,8 @@
+package com.ufcg.hrpayroll.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AppConfig {
+
+}

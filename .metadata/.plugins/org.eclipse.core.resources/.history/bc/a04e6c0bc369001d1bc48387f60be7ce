@@ -1,0 +1,5 @@
+package com.ufcg.hrworker.resources;
+
+public class WorkerResource {
+
+}

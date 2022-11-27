@@ -1,0 +1,5 @@
+package com.ufcg.hrpayroll.repositories;
+
+public class PAymentRepository {
+
+}
