@@ -1,0 +1,32 @@
+package com.ufcg.hrpayroll.services;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.ufcg.hrpayroll.entities.Payment;
+import com.ufcg.hrpayroll.entities.Worker;
+import com.ufcg.hrpayroll.feignclients.WorkerFeignClient;
+
+@Service
+public class PaymentService {
+	
+	@Value(value = "${hr-worker.host}")
+	private String workerHost;
+	
+	@Autowired
+	private WorkerFeignClient workerFeignClient;
+	
+	@Autowired
+	private RestTemplate restTemplate;
+	
+	public Payment getPayment(long workerId, int days) {
+		
+		Worker worker = workerFeignClient.findById(workerId);
+		return new Payment(worker.getName(), worker.getDailyIncome(), days);
+	}
+}

@@ -1,0 +1,5 @@
+package com.ufcg.hrpayroll.feignclients;
+
+public class WorkerFeignClient {
+
+}
