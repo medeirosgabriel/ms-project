@@ -11,9 +11,6 @@ import com.ufcg.hrpayroll.feignclients.WorkerFeignClient;
 @Service
 public class PaymentService {
 	
-	@Value(value = "${hr-worker.host}")
-	private String workerHost;
-	
 	@Autowired
 	private WorkerFeignClient workerFeignClient;
 	
