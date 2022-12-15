@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/gabriel/dev/eclipse-workspace/spring-micro-services/hr-eureka-server"/>
 			<item value="/home/gabriel/dev/eclipse-workspace/spring-micro-services/hr-payroll"/>
 			<item value="/home/gabriel/dev/eclipse-workspace/spring-micro-services/hr-worker"/>
 		</list>
